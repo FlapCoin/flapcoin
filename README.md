@@ -1,6 +1,8 @@
 Flappycoin integration/staging tree
 ================================
 
+Current version: 0.0.1
+
 http://www.flappycoin.org
 
 Copyright (c) 2009-2013 Bitcoin Developers
@@ -20,6 +22,11 @@ The rest is the same as Bitcoin.
 
 For more information, as well as an immediately useable, binary version of
 the Flappycoin client sofware, see http://www.flappycoin.org.
+
+Download Links:
+----------------
+Windows: https://www.dropbox.com/s/08038s8bt6i7p3p/flappycoin-qt-win-0.0.1.zip
+Mac: https://www.dropbox.com/s/nzyqew0ze4y9kmz/FlappyCoin-qt-0.0.1-MacOSX.zip
 
 License
 -------
@@ -71,4 +78,5 @@ Unit tests for the GUI code are in `src/qt/test/`. To compile and run them:
     qmake BITCOIN_QT_TEST=1 -o Makefile.test bitcoin-qt.pro
     make -f Makefile.test
     ./flappycoin-qt_test
+
 
