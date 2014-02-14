@@ -3,7 +3,9 @@ Flappycoin integration/staging tree
 
 Current version: 0.0.1
 
-http://www.flappycoin.org
+http://flappycoin.info
+
+![FlappyCoin](http://i.imgur.com/wclOei4.png)
 
 Copyright (c) 2009-2013 Bitcoin Developers
 Copyright (c) 2011-2013 Flappycoin Developers
