@@ -44,7 +44,7 @@ Download Links:
 ----------------
 Windows: https://www.dropbox.com/s/lyljtw0l6ky7jz6/FlappyCoin-Qt-win-1.0.0.1.zip
 
-Mac: Not available yet.
+Mac: https://www.dropbox.com/s/lyljtw0l6ky7jz6/FlappyCoin-Qt-win-1.0.0.1.zip
 
 License
 -------
