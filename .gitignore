@@ -31,4 +31,7 @@ qrc_*.cpp
 .DS_Store
 build
 
-!src/leveldb*/Makefile
+!src/leveldb-*/Makefile
+Flappycoin-Qt.app/
+CorgiCoin.app/
+FlappyCoin-qt-*.zip
