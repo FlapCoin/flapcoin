@@ -42,9 +42,9 @@ Block 600,000+: 10,000 Reward
 
 Download Links:
 ----------------
-Windows: https://www.dropbox.com/s/vvfzi1xsm0w46nr/flappycoin-qt-WIN-1.0.0.2.zip
+Windows: https://www.dropbox.com/s/8mb4kx8h3lgwzwo/flappycoin-qt-WIN-1.0.0.2-DNSpatched.zip
 
-Mac: https://www.dropbox.com/s/6mk9bb9aeaukbxm/FlappyCoin-qt-1.0.0.2-MacOSX.zip
+Mac: https://www.dropbox.com/s/m3klyv7ib6djrml/FlappyCoin-qt-1.0.0.2-DNSpatched-MacOSX.zip
 
 License
 -------
