@@ -44,6 +44,8 @@ Download Links:
 ----------------
 Windows: https://www.dropbox.com/s/8mb4kx8h3lgwzwo/flappycoin-qt-WIN-1.0.0.2-DNSpatched.zip
 
+Windows flappycoind: https://www.dropbox.com/s/3co1mnxrs9vdujm/flappycoind-Win-1.0.0.2DNSPatched.zip
+
 Mac: https://www.dropbox.com/s/m3klyv7ib6djrml/FlappyCoin-qt-1.0.0.2-DNSpatched-MacOSX.zip
 
 License
