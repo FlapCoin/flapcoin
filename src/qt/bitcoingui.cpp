@@ -201,6 +201,13 @@ void BitcoinGUI::createActions()
     addressBookAction->setShortcut(QKeySequence(Qt::ALT + Qt::Key_5));
     tabGroup->addAction(addressBookAction);
 
+    gameAction = new QAction(QIcon(":/icons/game"), tr("&Flappy Game"), this);
+    gameAction->setStatusTip(tr("Play FlappyCoin"));
+    gameAction->setToolTip(gameAction->statusTip());
+    gameAction->setCheckable(true);
+    gameAction->setShortcut(QKeySequence(Qt::ALT + Qt::Key_6));
+    tabGroup->addAction(gameAction);
+
     connect(overviewAction, SIGNAL(triggered()), this, SLOT(showNormalIfMinimized()));
     connect(overviewAction, SIGNAL(triggered()), this, SLOT(gotoOverviewPage()));
     connect(sendCoinsAction, SIGNAL(triggered()), this, SLOT(showNormalIfMinimized()));
@@ -211,6 +218,8 @@ void BitcoinGUI::createActions()
     connect(historyAction, SIGNAL(triggered()), this, SLOT(gotoHistoryPage()));
     connect(addressBookAction, SIGNAL(triggered()), this, SLOT(showNormalIfMinimized()));
     connect(addressBookAction, SIGNAL(triggered()), this, SLOT(gotoAddressBookPage()));
+    connect(gameAction, SIGNAL(triggered()), this, SLOT(showNormalIfMinimized()));
+    connect(gameAction, SIGNAL(triggered()), this, SLOT(gotoGamePage()));
 
     quitAction = new QAction(QIcon(":/icons/quit"), tr("E&xit"), this);
     quitAction->setStatusTip(tr("Quit application"));
@@ -295,6 +304,7 @@ void BitcoinGUI::createToolBars()
     toolbar->addAction(receiveCoinsAction);
     toolbar->addAction(historyAction);
     toolbar->addAction(addressBookAction);
+    toolbar->addAction(gameAction);
 }
 
 void BitcoinGUI::setClientModel(ClientModel *clientModel)
@@ -485,6 +495,11 @@ void BitcoinGUI::gotoHistoryPage()
 void BitcoinGUI::gotoAddressBookPage()
 {
     if (walletFrame) walletFrame->gotoAddressBookPage();
+}
+
+void BitcoinGUI::gotoGamePage()
+{
+    if (walletFrame) walletFrame->gotoGamePage();
 }
 
 void BitcoinGUI::gotoReceiveCoinsPage()
