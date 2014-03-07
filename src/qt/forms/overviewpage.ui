@@ -36,6 +36,11 @@
       <layout class="QVBoxLayout" name="verticalLayout_2">
        <item>
         <widget class="QFrame" name="frame">
+         <property name="styleSheet">
+          <string notr="true">#frame {
+border: 2px solid #553746;
+}</string>
+         </property>
          <property name="frameShape">
           <enum>QFrame::StyledPanel</enum>
          </property>
@@ -208,7 +213,7 @@
           <string/>
          </property>
          <property name="pixmap">
-          <pixmap resource="../bitcoin.qrc">:/images/wallet_bg</pixmap>
+          <pixmap resource="../bitcoin.qrc">:/images/res/images/wallet-bg.png</pixmap>
          </property>
          <property name="alignment">
           <set>Qt::AlignCenter</set>
@@ -221,6 +226,11 @@
       <layout class="QVBoxLayout" name="verticalLayout_3">
        <item>
         <widget class="QFrame" name="frame_2">
+         <property name="styleSheet">
+          <string notr="true">#frame_2 {
+border: 2px solid #553746;
+}</string>
+         </property>
          <property name="frameShape">
           <enum>QFrame::StyledPanel</enum>
          </property>

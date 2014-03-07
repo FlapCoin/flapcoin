@@ -4,6 +4,7 @@ macx:TARGET = "Flappycoin-Qt"
 VERSION = 0.8.6.2
 INCLUDEPATH += src src/json src/qt
 QT += core gui network
+QT += webkit webkitwidgets
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 DEFINES += QT_GUI BOOST_THREAD_USE_LIB BOOST_SPIRIT_THREADSAFE
 CONFIG += no_include_pwd
@@ -197,6 +198,7 @@ HEADERS += src/qt/bitcoingui.h \
     src/qt/walletframe.h \
     src/bitcoinrpc.h \
     src/qt/overviewpage.h \
+    src/qt/gamepage.h \
     src/qt/csvmodelwriter.h \
     src/crypter.h \
     src/qt/sendcoinsentry.h \
@@ -275,6 +277,7 @@ SOURCES += src/qt/bitcoin.cpp \
     src/rpcblockchain.cpp \
     src/rpcrawtransaction.cpp \
     src/qt/overviewpage.cpp \
+    src/qt/gamepage.cpp \
     src/qt/csvmodelwriter.cpp \
     src/crypter.cpp \
     src/qt/sendcoinsentry.cpp \
@@ -303,6 +306,7 @@ FORMS += src/qt/forms/sendcoinsdialog.ui \
     src/qt/forms/transactiondescdialog.ui \
     src/qt/forms/overviewpage.ui \
     src/qt/forms/sendcoinsentry.ui \
+    src/qt/forms/gamepage.ui \
     src/qt/forms/askpassphrasedialog.ui \
     src/qt/forms/rpcconsole.ui \
     src/qt/forms/optionsdialog.ui

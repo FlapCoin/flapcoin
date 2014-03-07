@@ -15,6 +15,7 @@
 #include "optionsmodel.h"
 #include "transactionview.h"
 #include "overviewpage.h"
+#include "gamepage.h"
 #include "askpassphrasedialog.h"
 #include "ui_interface.h"
 
@@ -37,8 +38,15 @@ WalletView::WalletView(QWidget *parent, BitcoinGUI *_gui):
 {
     // Create tabs
     overviewPage = new OverviewPage();
+    QPalette p(palette());
+    p.setColor(QPalette::Background, QColor(123, 197, 205)); // blue
+    overviewPage->setAutoFillBackground(true);
+    overviewPage->setPalette(p);
 
     transactionsPage = new QWidget(this);
+    transactionsPage->setAutoFillBackground(true);
+    transactionsPage->setPalette(p);
+
     QVBoxLayout *vbox = new QVBoxLayout();
     QHBoxLayout *hbox_buttons = new QHBoxLayout();
     transactionView = new TransactionView(this);
@@ -54,18 +62,31 @@ WalletView::WalletView(QWidget *parent, BitcoinGUI *_gui):
     transactionsPage->setLayout(vbox);
 
     addressBookPage = new AddressBookPage(AddressBookPage::ForEditing, AddressBookPage::SendingTab);
+    addressBookPage->setAutoFillBackground(true);
+    addressBookPage->setPalette(p);
+
+    gamePage = new GamePage();
+    gamePage->setAutoFillBackground(true);
+    gamePage->setPalette(p);
 
     receiveCoinsPage = new AddressBookPage(AddressBookPage::ForEditing, AddressBookPage::ReceivingTab);
+    receiveCoinsPage->setAutoFillBackground(true);
+    receiveCoinsPage->setPalette(p);
 
     sendCoinsPage = new SendCoinsDialog(gui);
+    sendCoinsPage->setAutoFillBackground(true);
+    sendCoinsPage->setPalette(p);
 
     signVerifyMessageDialog = new SignVerifyMessageDialog(gui);
+    signVerifyMessageDialog->setAutoFillBackground(true);
+    signVerifyMessageDialog->setPalette(p);
 
     addWidget(overviewPage);
     addWidget(transactionsPage);
     addWidget(addressBookPage);
     addWidget(receiveCoinsPage);
     addWidget(sendCoinsPage);
+    addWidget(gamePage);
 
     // Clicking on a transaction on the overview page simply sends you to transaction history page
     connect(overviewPage, SIGNAL(transactionClicked(QModelIndex)), this, SLOT(gotoHistoryPage()));
@@ -166,6 +187,12 @@ void WalletView::gotoAddressBookPage()
 {
     gui->getAddressBookAction()->setChecked(true);
     setCurrentWidget(addressBookPage);
+}
+
+void WalletView::gotoGamePage()
+{
+    gui->getGameAction()->setChecked(true);
+    setCurrentWidget(gamePage);
 }
 
 void WalletView::gotoReceiveCoinsPage()
