@@ -1,19 +1,6 @@
 #include "gamepage.h"
 #include "ui_gamepage.h"
 
-#include "bitcoinunits.h"
-#include "optionsmodel.h"
-#include "transactiontablemodel.h"
-#include "transactionfilterproxy.h"
-#include "guiutil.h"
-#include "guiconstants.h"
-
-#include <QAbstractItemDelegate>
-#include <QPainter>
-
-#define DECORATION_SIZE 64
-#define NUM_ITEMS 3
-
 GamePage::GamePage(QWidget *parent) :
   QWidget(parent),
   ui(new Ui::GamePage)
