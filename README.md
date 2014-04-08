@@ -1,20 +1,22 @@
 Flappycoin 
 ================================
+FLAPPYCOIN FORKED SOURCE CODE. CHANGES BELOW.
 
-Current version: 1.0.0.2
+Current version: 1.0.0.3
 
-http://flappycoin.info
+http://flappycoin.info - Old domain, changing to flapcoin.com/info
 
 ![FlappyCoin](http://i.imgur.com/wclOei4.png)
 
 Copyright (c) 2009-2013 Bitcoin Developers
 Copyright (c) 2014 Flappycoin Developers
+Copyright (c) 2014 Flappycoin Saviors
 
 Specifications:
 ---------------
 Algorithm: Scrypt
 
-Max number of coins 100,000,000,000 FLAP in circulation after 1.5 years
+Max number of coins 50,000,000,000 FLAP in circulation after 3 years
 
 Block Time: 60 Seconds
 
@@ -25,19 +27,19 @@ Premine: None
 
 Rewards:
 ---------------
-Block 1-100,000: 0-1,000,000 Reward
+Block 1-90,000: 0-1,000,000 Reward
 
-Block 100,001 — 200,000: 0-500,000 Reward
+Block 90,001 — 200,000: 0-100,000 Reward
 
-Block 200,001 — 300,000: 0-250,000 Reward
+Block 200,001 — 300,000: 0-50,000 Reward
 
-Block 300,001 — 400,000: 0-125,000 Reward
+Block 300,001 — 400,000: 0-25,000 Reward
 
-Block 400,001 — 500,000: 0-62,500 Reward
+Block 400,001 — 500,000: 0-12,500 Reward
 
-Block 500,001 - 600,000: 0-31,250 Reward
+Block 500,001 - 600,000: 0-6,250 Reward
 
-Block 600,000+: 10,000 Reward
+Block 600,000+: 50 + Transaction Fees Reward
 
 
 Download Links:
