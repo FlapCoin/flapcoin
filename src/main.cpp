@@ -1084,7 +1084,7 @@ int64 static GetBlockValue(int nHeight, int64 nFees, uint256 prevHash)
     int rand4 = 0;
     int rand5 = 0;
 
-    if(nHeight < 90000)
+    if(nHeight < 100000)
     {
         nSubsidy = (1 + rand) * COIN;
     }
@@ -1096,7 +1096,7 @@ int64 static GetBlockValue(int nHeight, int64 nFees, uint256 prevHash)
         rand1 = generateMTRandom(seed, 99999);
         nSubsidy = (1 + rand1) * COIN;
     }
-    else if(nHeight < 300000)
+    else if(nHeight < 400000)
     {
         cseed_str = prevHash.ToString().substr(6,7);
         cseed = cseed_str.c_str();
@@ -1104,7 +1104,7 @@ int64 static GetBlockValue(int nHeight, int64 nFees, uint256 prevHash)
         rand2 = generateMTRandom(seed, 49999);
         nSubsidy = (1 + rand2) * COIN;
     }
-    else if(nHeight < 400000)
+    else if(nHeight < 800000)
     {
         cseed_str = prevHash.ToString().substr(7,7);
         cseed = cseed_str.c_str();
@@ -1112,7 +1112,7 @@ int64 static GetBlockValue(int nHeight, int64 nFees, uint256 prevHash)
         rand3 = generateMTRandom(seed, 24999);
         nSubsidy = (1 + rand3) * COIN;
     }
-    else if(nHeight < 500000)
+    else if(nHeight < 1000000)
     {
         cseed_str = prevHash.ToString().substr(7,7);
         cseed = cseed_str.c_str();
@@ -1120,7 +1120,7 @@ int64 static GetBlockValue(int nHeight, int64 nFees, uint256 prevHash)
         rand4 = generateMTRandom(seed, 12499);
         nSubsidy = (1 + rand4) * COIN;
     }
-    else if(nHeight < 600000)
+    else if(nHeight < 1200000)
     {
         cseed_str = prevHash.ToString().substr(6,7);
         cseed = cseed_str.c_str();
@@ -1274,14 +1274,14 @@ unsigned int static KimotoGravityWell(const CBlockIndex* pindexLast, const CBloc
                 PastDifficultyAveragePrev = PastDifficultyAverage;
 
                 if (LatestBlockTime < BlockReading->GetBlockTime()) {
-                        if (BlockReading->nHeight > 90000) LatestBlockTime = BlockReading->GetBlockTime();
+                        if (BlockReading->nHeight > 100000) LatestBlockTime = BlockReading->GetBlockTime();
                 }
                 PastRateActualSeconds                   = LatestBlockTime - BlockReading->GetBlockTime();
 
                 PastRateTargetSeconds                        = TargetBlocksSpacingSeconds * PastBlocksMass;
                 PastRateAdjustmentRatio                        = double(1);
 
-                if (BlockReading->nHeight > 90000) {
+                if (BlockReading->nHeight > 100000) {
                         if (PastRateActualSeconds < 1) { PastRateActualSeconds = 1; }
                 } else {
                         if (PastRateActualSeconds < 0) { PastRateActualSeconds = 0; }
