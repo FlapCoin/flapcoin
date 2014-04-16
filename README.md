@@ -27,17 +27,17 @@ Premine: None
 
 Rewards:
 ---------------
-Block 1-90,000: 0-1,000,000 Reward
+Block 1-100,000: 0-1,000,000 Reward
 
-Block 90,001 — 200,000: 0-100,000 Reward
+Block 100,001 — 200,000: 0-100,000 Reward
 
-Block 200,001 — 300,000: 0-50,000 Reward
+Block 200,001 — 400,000: 0-50,000 Reward
 
-Block 300,001 — 400,000: 0-25,000 Reward
+Block 400,001 — 800,000: 0-25,000 Reward
 
-Block 400,001 — 500,000: 0-12,500 Reward
+Block 800,001 — 1,000,000: 0-12,500 Reward
 
-Block 500,001 - 600,000: 0-6,250 Reward
+Block 1,000,001 - 1,200,000: 0-6,250 Reward
 
 Block 600,000+: 50 + Transaction Fees Reward
 
