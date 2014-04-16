@@ -39,7 +39,7 @@ Block 800,001 — 1,000,000: 0-12,500 Reward
 
 Block 1,000,001 - 1,200,000: 0-6,250 Reward
 
-Block 600,000+: 50 + Transaction Fees Reward
+Block 1,200,000+: 50 + Transaction Fees Reward
 
 
 Download Links:
