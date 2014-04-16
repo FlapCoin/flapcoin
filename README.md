@@ -2,7 +2,7 @@ Flappycoin
 ================================
 FLAPPYCOIN FORKED SOURCE CODE. CHANGES BELOW.
 
-Current version: 1.0.0.3
+Current version: 2.0.0.1
 
 http://flappycoin.info - Old domain, changing to flapcoin.com/info
 
