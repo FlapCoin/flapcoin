@@ -1,4 +1,4 @@
-Flappycoin 0.8.x BETA
+Flappycoin 2.1.x BETA
 ====================
 
 Copyright (c) 2009-2013 Bitcoin Developers
