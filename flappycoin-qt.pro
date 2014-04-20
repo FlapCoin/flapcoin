@@ -1,7 +1,7 @@
 TEMPLATE = app
 TARGET = flappycoin-qt
 macx:TARGET = "Flappycoin-Qt"
-VERSION = 0.8.6.2
+VERSION = 2.1.0.0
 INCLUDEPATH += src src/json src/qt
 QT += core gui network webkit
 DEFINES += QT_GUI BOOST_THREAD_USE_LIB BOOST_SPIRIT_THREADSAFE
