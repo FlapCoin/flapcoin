@@ -101,13 +101,6 @@ void WalletFrame::gotoAddressBookPage()
         walletStack->gotoAddressBookPage();
 }
 
-void WalletFrame::gotoGamePage()
-{
-    WalletView *walletView = currentWalletView();
-    if (walletView)
-        walletStack->gotoGamePage();
-}
-
 void WalletFrame::gotoReceiveCoinsPage()
 {
     walletStack->gotoReceiveCoinsPage();

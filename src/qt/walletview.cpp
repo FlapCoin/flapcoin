@@ -15,7 +15,6 @@
 #include "optionsmodel.h"
 #include "transactionview.h"
 #include "overviewpage.h"
-#include "gamepage.h"
 #include "askpassphrasedialog.h"
 #include "ui_interface.h"
 
@@ -65,10 +64,6 @@ WalletView::WalletView(QWidget *parent, BitcoinGUI *_gui):
     addressBookPage->setAutoFillBackground(true);
     addressBookPage->setPalette(p);
 
-    gamePage = new GamePage();
-    gamePage->setAutoFillBackground(true);
-    gamePage->setPalette(p);
-
     receiveCoinsPage = new AddressBookPage(AddressBookPage::ForEditing, AddressBookPage::ReceivingTab);
     receiveCoinsPage->setAutoFillBackground(true);
     receiveCoinsPage->setPalette(p);
@@ -86,7 +81,7 @@ WalletView::WalletView(QWidget *parent, BitcoinGUI *_gui):
     addWidget(addressBookPage);
     addWidget(receiveCoinsPage);
     addWidget(sendCoinsPage);
-    addWidget(gamePage);
+
 
     // Clicking on a transaction on the overview page simply sends you to transaction history page
     connect(overviewPage, SIGNAL(transactionClicked(QModelIndex)), this, SLOT(gotoHistoryPage()));
@@ -187,12 +182,6 @@ void WalletView::gotoAddressBookPage()
 {
     gui->getAddressBookAction()->setChecked(true);
     setCurrentWidget(addressBookPage);
-}
-
-void WalletView::gotoGamePage()
-{
-    gui->getGameAction()->setChecked(true);
-    setCurrentWidget(gamePage);
 }
 
 void WalletView::gotoReceiveCoinsPage()
