@@ -1084,7 +1084,7 @@ int64 static GetBlockValue(int nHeight, int64 nFees, uint256 prevHash)
     int rand4 = 0;
     int rand5 = 0;
 
-    if(nHeight < 100000)
+    if(nHeight < 110000)
     {
         nSubsidy = (1 + rand) * COIN;
     }
@@ -1275,13 +1275,13 @@ unsigned int static KimotoGravityWell(const CBlockIndex* pindexLast, const CBloc
                 PastDifficultyAveragePrev = PastDifficultyAverage;
                 
                  if (LatestBlockTime < BlockReading->GetBlockTime()) {
-                      if (BlockReading->nHeight > 100000) // HARD Fork block number
+                      if (BlockReading->nHeight > 110000) // HARD Fork block number
                                LatestBlockTime = BlockReading->GetBlockTime();
                 }	
 				PastRateActualSeconds                   = LatestBlockTime - BlockReading->GetBlockTime();
                 PastRateTargetSeconds = TargetBlocksSpacingSeconds * PastBlocksMass;
                 PastRateAdjustmentRatio = double(1);
-                if (BlockReading->nHeight > 100000) { // HARD Fork block number
+                if (BlockReading->nHeight > 110000) { // HARD Fork block number
                        if (PastRateActualSeconds < 1) { PastRateActualSeconds = 1; }
                 } 
 				else {
